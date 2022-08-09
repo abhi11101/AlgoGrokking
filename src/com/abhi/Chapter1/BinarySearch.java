@@ -1,4 +1,4 @@
-package com.abhi.BinarySearch;
+package com.abhi.Chapter1;
 
 public class BinarySearch {
     public static void main(String[] args) {
