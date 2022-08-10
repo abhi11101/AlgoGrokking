@@ -7,7 +7,7 @@ public class BinarySearch {
         for (int i=0;i<10;i++){
             arr[i]=i;
         }
-        System.out.println(binary(array,100));
+        System.out.println(binary(array,102));
     }
     public static String binary(int arr[], int key){
         int first = 0;
