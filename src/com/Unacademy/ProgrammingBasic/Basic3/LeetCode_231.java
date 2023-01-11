@@ -3,7 +3,7 @@ package com.Unacademy.ProgrammingBasic.Basic3;
 public class LeetCode_231 {
     public static void main(String[] args) {
 
-        System.out.println(twoPower(6));
+        System.out.println(twoPower(8));
         System.out.println(betterSol(4));
     }
 
@@ -11,7 +11,7 @@ public class LeetCode_231 {
         if (n<0)return false;
         int count =0;
         while (n>0){
-            if ((n&1)==0)count++;
+            if ((n&1)==1)count++;
             n = n>>1;
         }
         if (count==1)return true;
