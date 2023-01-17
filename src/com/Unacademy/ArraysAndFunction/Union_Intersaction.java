@@ -5,7 +5,10 @@ public class Union_Intersaction {
         int arr[] = {1,1,2,2};
         int arr2[] = {5,5,2,2};
         union(arr,arr2);
-        intersection(arr,arr2);
+        int res[]= intersection(arr,arr2);
+        for (int x : res){
+            System.out.print(x + " ");
+        }
     }
 
     public static void union(int arr[], int arr2[]){
@@ -55,7 +58,7 @@ public class Union_Intersaction {
         System.out.println();
 
     }
-   public static void intersection(int arr[],int arr2[]){
+   public static int[] intersection(int arr[],int arr2[]){
        int res=0;
        int index =0;
        int inter[] = new int[arr.length > arr2.length ? arr.length : arr2.length];
@@ -73,14 +76,15 @@ public class Union_Intersaction {
                     break;
                 }
             }
-            inter[index] = x;
-            index++;
             if (same==true){
+                inter[index] = x;
+                index++;
                 res++;
                 System.out.print(x + " ");
             }
         }
         if (res==0) System.out.println("Nothing Common");
        System.out.println();
+       return inter;
    }
 }

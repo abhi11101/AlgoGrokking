@@ -27,7 +27,6 @@ public class SortOneTwo {
             index++;
         }
         while (two>0){
-
             arr[index]=2;
             two--;
             index++;
