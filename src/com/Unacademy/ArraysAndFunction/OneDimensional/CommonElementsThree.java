@@ -1,4 +1,4 @@
-package com.Unacademy.ArraysAndFunction;
+package com.Unacademy.ArraysAndFunction.OneDimensional;
 
 import java.util.HashSet;
 import java.util.Set;

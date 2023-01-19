@@ -1,4 +1,4 @@
-package com.Unacademy.ArraysAndFunction;
+package com.Unacademy.ArraysAndFunction.OneDimensional;
 
 public class Union_Intersaction {
     public static void main(String[] args) {

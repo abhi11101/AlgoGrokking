@@ -1,4 +1,4 @@
-package com.Unacademy.ArraysAndFunction;
+package com.Unacademy.ArraysAndFunction.OneDimensional;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

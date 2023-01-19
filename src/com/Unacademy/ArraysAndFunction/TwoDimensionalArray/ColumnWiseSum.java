@@ -2,7 +2,7 @@ package com.Unacademy.ArraysAndFunction.TwoDimensionalArray;
 
 public class ColumnWiseSum {
     public static void main(String[] args) {
-        int arr[][] = new int[3][3];
+        int[][] arr = new int[3][3];
         int count =1;
         for (int i=0;i<3;i++){
             for (int j=0;j<3;j++){
@@ -12,11 +12,10 @@ public class ColumnWiseSum {
             }
             System.out.println();
         }
-
         sum(arr,3,3);
     }
 
-    public static void sum(int arr[][],int m, int n){
+    public static void sum(int[][] arr, int m, int n){
         int sum=0;
         int max =0;
         for (int i=0;i<n;i++){
