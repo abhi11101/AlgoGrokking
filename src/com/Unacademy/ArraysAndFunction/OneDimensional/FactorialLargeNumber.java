@@ -4,7 +4,7 @@ public class FactorialLargeNumber {
 
     //https://www.geeksforgeeks.org/factorial-large-number/
     public static void main(String[] args) {
-        fact(10);
+        fact(5);
     }
 
     public static void fact(int num){
@@ -14,7 +14,7 @@ public class FactorialLargeNumber {
         for (int i =2;i<=num;i++){
             size = multiply(arr,i,size);
         }
-        for (int i=size-1;i>0;i--){
+        for (int i=size-1;i>=0;i--){
             System.out.print(arr[i]);
         }
     }
