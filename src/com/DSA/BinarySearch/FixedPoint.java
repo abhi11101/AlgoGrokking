@@ -1,5 +1,7 @@
 package com.DSA.BinarySearch;
 
+import java.util.HashMap;
+
 public class FixedPoint {
     // https://www.geeksforgeeks.org/find-a-fixed-point-in-a-given-array/
     public static void main(String[] args) {
