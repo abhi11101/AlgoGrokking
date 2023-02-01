@@ -4,7 +4,7 @@ public class LeetCode_231 {
     public static void main(String[] args) {
 
         System.out.println(twoPower(8));
-        System.out.println(betterSol(4));
+        System.out.println(betterSol(6));
     }
 
     public static boolean twoPower(int n){
