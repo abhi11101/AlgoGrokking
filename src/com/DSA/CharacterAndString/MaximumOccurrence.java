@@ -14,6 +14,9 @@ public class MaximumOccurrence {
         char ans='*';
         for(int i=0;i<line.length();i++){
             char v = line.charAt(i);
+            if(v>=65 && v<=90){ //For taking A and a as same character
+                v = (char)(v+32);
+            }
             map.put(v,map.getOrDefault(v,0)+1);
             if(map.get(v)>max || map.get(v)==max && v<ans){
                 max=map.get(v);
