@@ -7,8 +7,8 @@ public class ArraySum {
     }
 
     public static int sumFind(int[] arr,int size, int i){
-        if (size==0)return 0;
-        int sum =  arr[i]+sumFind(arr,size-1,i+1);
+        if (i==size)return 0;
+        int sum =  arr[i]+sumFind(arr,size,i+1);
         return sum;
     }
 }
