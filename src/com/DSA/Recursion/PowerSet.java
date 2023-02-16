@@ -10,7 +10,8 @@ public class PowerSet {
             System.out.println(output);
             return ;
         }
-        print(input,i+1,output);
+
         print(input,i+1,output+input.charAt(i));
+        print(input,i+1,output);
     }
 }
