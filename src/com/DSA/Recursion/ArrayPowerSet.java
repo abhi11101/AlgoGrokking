@@ -9,6 +9,7 @@ public class ArrayPowerSet {
 //        find(arr,0,list);
         List<List<Integer>> ans = new ArrayList<>();
         ans =leetCode(arr);
+        System.out.println(ans);
         showList(ans);
     }
 
