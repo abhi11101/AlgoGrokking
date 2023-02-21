@@ -50,7 +50,7 @@ public class QuickSort {
         }
 
         return pivotIndex;
-    }
+    } 
 
     private static void swap(int[] arr, int firstIndex , int secondIndex){
         int temp = arr[firstIndex];

@@ -11,9 +11,11 @@ public class SubsetSumThree {
         ArrayList<Integer> result = new ArrayList<>();
         int[] arr= {2,3};
         find(arr,0,ans,curr);
+        System.out.println("Showing subsets");
         show(ans);
         findSum(ans,result);
         Collections.sort(result);
+        System.out.println("Sum of Each subset");
         showList(result);
     }
 
@@ -44,6 +46,7 @@ public class SubsetSumThree {
 
     private static void show(List<List<Integer>> list){
         for (List<Integer> l : list){
+            if (l.size()==0) System.out.print("{}");
             for (int x :l){
                 System.out.print(x+ " ");
             }
