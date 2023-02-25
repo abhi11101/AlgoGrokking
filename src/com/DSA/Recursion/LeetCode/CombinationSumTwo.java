@@ -1,4 +1,4 @@
-package com.DSA.Recursion;
+package com.DSA.Recursion.LeetCode;
 
 import java.util.ArrayList;
 import java.util.Arrays;

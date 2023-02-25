@@ -5,10 +5,10 @@ import java.util.List;
 
 public class LetterCombinationOfPhoneNumber_17 {
     public static void main(String[] args) {
-        String[] data = {"","","abc","def","ghi"};
+        String[] data = {"abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
         List<String> curr = new ArrayList<>();
         StringBuilder output = new StringBuilder("");
-        find("23",0,curr,data,output);
+        find("237",0,curr,data,output);
         showList(curr);
 
     }
@@ -18,7 +18,7 @@ public class LetterCombinationOfPhoneNumber_17 {
             curr.add(output.toString());
             return;
         }
-        int index = input.charAt(i)-'0';
+        int index = input.charAt(i)-'2';
         String currentData = data[index];
         for (int k=0;k<currentData.length();k++){
             output.append(currentData.charAt(k));
