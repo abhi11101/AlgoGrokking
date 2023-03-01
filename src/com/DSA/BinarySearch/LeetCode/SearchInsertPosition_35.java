@@ -3,7 +3,7 @@ package com.DSA.BinarySearch.LeetCode;
 public class SearchInsertPosition_35 {
     public static void main(String[] args) {
         int[] nums = {1,3};
-        int target = 2;
+        int target = 4;
         System.out.println(searchInsert(nums,target));
     }
     public static int searchInsert(int[] nums, int target) {

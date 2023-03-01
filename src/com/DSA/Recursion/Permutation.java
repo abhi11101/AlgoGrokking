@@ -1,11 +1,13 @@
 package com.DSA.Recursion;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Permutation {
     public static void main(String[] args) {
-        int[] arr = {0,1};
+        int[] arr = {1,2,3};
         List<List<Integer>> ans = permute(arr);
         System.out.println("Size "+ ans.size());
         showList(ans);
