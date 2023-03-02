@@ -15,7 +15,7 @@ public class CombinationSum {
     }
 
     private static void otherApproach(int[] arr, int target, int i, List<List<Integer>> ans,List<Integer> curr){
-        if (i==arr.length){
+        if (i==arr.length || target==0){
             if (target==0)ans.add(new ArrayList<>(curr));
             return;
         }

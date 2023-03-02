@@ -20,7 +20,8 @@ public class RemoveDuplicatesFromSortedArray_26 {
            System.out.println("Uni "+ unique);
            System.out.println("J "+ j);
            if (j<n){unique+=1;
-           nums[unique]=nums[j];}
+           nums[unique]=nums[j];
+           j++;}
        }
         return unique+1;
     }
