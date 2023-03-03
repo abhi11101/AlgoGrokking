@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NQueens_51 {
+     static int count =0;
     public static void main(String[] args) {
         List<List<String>> ans =solveNQueens(4);
         showList(ans);
+        System.out.println(count);
     }
 
     public static List<List<String>> solveNQueens(int n) {
@@ -17,6 +19,7 @@ public class NQueens_51 {
     }
     public static void rec(char[][] board, List<List<String>> allBoards, int col){
         if (col==board.length){
+            count++;
             store(board,allBoards);
             return;
         }
