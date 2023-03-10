@@ -14,6 +14,7 @@ public class FindAllAnagramsString_438 {
     }
     public static List<Integer> findAnagrams(String s, String p) {
         List<Integer> ans = new ArrayList<>();
+        if(s.length()<p.length())return ans;
         int ws =p.length();
         int[] base = new int[26];
         for (int i=0;i<ws;i++){
@@ -21,7 +22,6 @@ public class FindAllAnagramsString_438 {
             base[c-'a']++;
         }
         int i=0;
-        int index =0;
         int[] window = new int[26];
         while (i<ws && i<s.length()){
             char c = s.charAt(i);

@@ -8,7 +8,7 @@ public class LetterCombinationOfPhoneNumber_17 {
         String[] data = {"abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
         List<String> curr = new ArrayList<>();
         StringBuilder output = new StringBuilder("");
-        find("237",0,curr,data,output);
+        find("23",0,curr,data,output);
         showList(curr);
 
     }
