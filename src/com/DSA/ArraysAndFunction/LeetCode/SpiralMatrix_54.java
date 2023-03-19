@@ -1,6 +1,6 @@
-package com.DSA.ArraysAndFunction.TwoDimensionalArray;
+package com.DSA.ArraysAndFunction.LeetCode;
 
-public class SpiralMatrix {
+public class SpiralMatrix_54 {
     public static void main(String[] args) {
         int arr[][] = new int[4][4];
         int count =1;

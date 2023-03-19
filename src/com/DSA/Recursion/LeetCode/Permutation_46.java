@@ -1,11 +1,9 @@
-package com.DSA.Recursion;
+package com.DSA.Recursion.LeetCode;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
-public class Permutation {
+public class Permutation_46 {
     public static void main(String[] args) {
         int[] arr = {1,2,3};
         List<List<Integer>> ans = permute(arr);

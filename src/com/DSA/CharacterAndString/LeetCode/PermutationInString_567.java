@@ -1,8 +1,6 @@
-package com.DSA.CharacterAndString;
+package com.DSA.CharacterAndString.LeetCode;
 
-import java.util.Stack;
-
-public class PermutationInString {
+public class PermutationInString_567 {
     public static void main(String[] args) {
        System.out.println(find("eidboaoo","ab"));
         System.out.println(fastApproach("eidboaoo","ab"));

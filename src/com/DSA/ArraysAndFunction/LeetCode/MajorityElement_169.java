@@ -1,9 +1,9 @@
-package com.DSA.ArraysAndFunction.OneDimensional;
+package com.DSA.ArraysAndFunction.LeetCode;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class MajorityElement {
+public class MajorityElement_169 {
 
     //https://www.geeksforgeeks.org/majority-element/
     public static void main(String[] args) {

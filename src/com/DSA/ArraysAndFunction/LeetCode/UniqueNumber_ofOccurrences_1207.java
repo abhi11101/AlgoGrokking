@@ -1,10 +1,10 @@
-package com.DSA.ArraysAndFunction.OneDimensional;
+package com.DSA.ArraysAndFunction.LeetCode;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-public class LeetCode_1207 {
+public class UniqueNumber_ofOccurrences_1207 {
 
 // https://leetcode.com/problems/unique-number-of-occurrences/description/
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package com.DSA.ArraysAndFunction.OneDimensional;
+package com.DSA.ArraysAndFunction.LeetCode;
 
-public class RotateArrayByN {
+public class RotateArrayByN_189 {
     public static void main(String[] args) {
         int[] arr = {-1,-100,3,99};
         rotate(arr,2);

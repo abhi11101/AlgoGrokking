@@ -1,6 +1,6 @@
-package com.DSA.ArraysAndFunction.TwoDimensionalArray;
+package com.DSA.ArraysAndFunction.LeetCode;
 
-public class SpiralMatrixTwo {
+public class SpiralMatrixTwo_59 {
     public static void main(String[] args) {
             work(1);
     }

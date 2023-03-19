@@ -1,6 +1,6 @@
-package com.DSA.ArraysAndFunction.TwoDimensionalArray;
+package com.DSA.ArraysAndFunction.LeetCode;
 
-public class Rotate90Degree {
+public class Rotate90Degree_48 {
     public static void main(String[] args) {
         int arr[][] = new int[4][4];
         System.out.println(arr.length);
