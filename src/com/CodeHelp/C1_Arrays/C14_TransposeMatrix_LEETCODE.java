@@ -1,16 +1,43 @@
 package com.CodeHelp.C1_Arrays;
 
-public class C14_TransposeMatrix {
+/*
+
+https://leetcode.com/problems/transpose-matrix/description/
+
+ */
+
+public class C14_TransposeMatrix_LEETCODE {
 
     public static void main(String[] args) {
 
         int[][] data = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
         int[][] nums = {{1,2},{3,4},{5,6}};
 
-        transposeSquareMatrix(data);
-        transposeNonSquareMatrix(nums);
+//        transposeSquareMatrix(data);
+//        transposeNonSquareMatrix(nums);
+        optimumSolution(nums);
 
     }
+
+
+    private static void optimumSolution(int[][] matrix){
+
+        printMatrix(matrix);
+        System.out.println("=======================");
+        int row = matrix.length;
+        int col = matrix[0].length;
+        int[][] result = new int[col][row];
+
+        for (int  i= 0;i <col;i++){
+            for(int j= 0;j<row;j++){
+
+                result[i][j] = matrix[j][i];
+            }
+        }
+        printMatrix(result);
+
+    }
+
 
     private static void transposeSquareMatrix(int[][] data) {
         printMatrix(data);
