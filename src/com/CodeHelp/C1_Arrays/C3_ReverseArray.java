@@ -24,7 +24,7 @@ public class C3_ReverseArray {
         // Using while loop
         int start = 0;
         int end = arr.length - 1;
-        while (start <= end) {
+        while (start < end) {
 
             int val = arr[start];
             arr[start] = arr[end];
