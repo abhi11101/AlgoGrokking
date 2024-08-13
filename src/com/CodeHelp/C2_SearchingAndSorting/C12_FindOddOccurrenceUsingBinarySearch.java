@@ -5,6 +5,7 @@ public class C12_FindOddOccurrenceUsingBinarySearch {
     public static void main(String[] args) {
 
         int[] nums = {1,1,2,2,3,3,4,4,3,600,600,4,4,};
+        int[] data = {5,4,4};
         System.out.println(search(nums));
 
     }
