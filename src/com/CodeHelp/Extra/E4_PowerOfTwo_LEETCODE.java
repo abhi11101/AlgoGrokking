@@ -1,4 +1,4 @@
-package com.CodeHelp.C1_Arrays.Extra;
+package com.CodeHelp.Extra;
 
 /*
 https://leetcode.com/problems/power-of-two/description/

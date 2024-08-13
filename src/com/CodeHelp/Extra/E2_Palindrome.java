@@ -1,4 +1,4 @@
-package com.CodeHelp.C1_Arrays.Extra;
+package com.CodeHelp.Extra;
 
 public class E2_Palindrome {
 
