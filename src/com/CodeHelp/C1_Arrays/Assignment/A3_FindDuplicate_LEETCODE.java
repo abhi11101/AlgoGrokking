@@ -18,9 +18,31 @@ public class A3_FindDuplicate_LEETCODE {
         int[] c = {3,3,3,3,3};
 //        System.out.println(usingSet(a));
         System.out.println(swapping(c));
+        System.out.println(withoutModifying(b));
     }
 
+    public static int withoutModifying(int[] nums){
 
+        int slow = nums[0];
+        int fast = nums[0];
+
+        while (true){
+            slow = nums[slow];
+            fast =  nums[nums[fast]];
+            if (slow == fast){
+                break;
+            }
+        }
+
+        slow = nums[0];
+
+        while (slow!=fast){
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+        return slow;
+
+    }
 
     public static int swapping(int[] nums){
     //        int i =0;
