@@ -9,7 +9,7 @@ public class C5_ValidPalindromeII_LEETCODE {
 
         String s = "abca";
         String s2 = "mlcupuuffuupuculm";
-        System.out.println(validPalindrome("aba"));
+        System.out.println(validPalindrome(s2));
 
     }
 

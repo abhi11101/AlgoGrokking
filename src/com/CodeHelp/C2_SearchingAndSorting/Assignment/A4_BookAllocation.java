@@ -6,8 +6,9 @@ public class A4_BookAllocation {
 
         int[] books = {12, 34, 67, 90};
         int[] books2 = {15, 17, 20};
-        System.out.println(allocate(books,1));
 
+        System.out.println(allocate(books,4));
+        System.out.println(allocate(books2,2));
     }
 
     public static int allocate(int[] books, int students){

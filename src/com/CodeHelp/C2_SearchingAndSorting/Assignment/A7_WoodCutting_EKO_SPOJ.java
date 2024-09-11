@@ -6,7 +6,7 @@ public class A7_WoodCutting_EKO_SPOJ {
 
         int[] trees = {20,15,10,17};
         int[] trees2 = {4,42,40,26,46};
-        System.out.println(findHeight(trees2,11));
+        System.out.println(findHeight(trees2,20));
 
     }
 
