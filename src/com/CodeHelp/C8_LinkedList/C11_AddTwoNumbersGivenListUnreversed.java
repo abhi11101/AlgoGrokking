@@ -1,37 +1,37 @@
 package com.CodeHelp.C8_LinkedList;
 
-public class C10_AddTwoNumbersGivenListUnreversed {
+public class C11_AddTwoNumbersGivenListUnreversed {
 
     public static void main(String[] args) {
 
-        C10_ListNode head1 = new C10_ListNode(2);
-        C10_ListNode second1 = new C10_ListNode(4);
-        C10_ListNode third1 = new C10_ListNode(3);
+        C11_ListNode head1 = new C11_ListNode(2);
+        C11_ListNode second1 = new C11_ListNode(4);
+        C11_ListNode third1 = new C11_ListNode(3);
         head1.next = second1;
         second1.next = third1;
 
-        C10_ListNode head2 = new C10_ListNode(9);
-        C10_ListNode second2 = new C10_ListNode(6);
-        C10_ListNode third2 = new C10_ListNode(4);
+        C11_ListNode head2 = new C11_ListNode(9);
+        C11_ListNode second2 = new C11_ListNode(6);
+        C11_ListNode third2 = new C11_ListNode(4);
         head2.next = second2;
         second2.next = third2;
 
         printList(head1);
         printList(head2);
 
-        C10_ListNode ans = addTwoNumbersWithoutReversedGivenList(head1, head2);
+        C11_ListNode ans = addTwoNumbersWithoutReversedGivenList(head1, head2);
 
         printList(ans);
     }
 
 
-    public static C10_ListNode addTwoNumbersWithoutReversedGivenList(C10_ListNode l1, C10_ListNode l2) {
+    public static C11_ListNode addTwoNumbersWithoutReversedGivenList(C11_ListNode l1, C11_ListNode l2) {
 
         l1 = reverseList(l1);
         l2 = reverseList(l2);
 
-        C10_ListNode ansHead = null;
-        C10_ListNode ansTail = null;
+        C11_ListNode ansHead = null;
+        C11_ListNode ansTail = null;
         int carry = 0;
 
         while (l1 != null && l2 != null) {
@@ -40,7 +40,7 @@ public class C10_AddTwoNumbersGivenListUnreversed {
             int digit = sum % 10;
             carry = sum / 10;
 
-            C10_ListNode node = new C10_ListNode(digit);
+            C11_ListNode node = new C11_ListNode(digit);
             if (ansHead == null) {
                 ansHead = node;
                 ansTail = node;
@@ -57,7 +57,7 @@ public class C10_AddTwoNumbersGivenListUnreversed {
             int sum = carry + l1.val;
             int digit = sum % 10;
             carry = sum / 10;
-            C10_ListNode node = new C10_ListNode(digit);
+            C11_ListNode node = new C11_ListNode(digit);
             ansTail.next = node;
             ansTail = node;
             l1 = l1.next;
@@ -67,7 +67,7 @@ public class C10_AddTwoNumbersGivenListUnreversed {
             int sum = carry + l2.val;
             int digit = sum % 10;
             carry = sum / 10;
-            C10_ListNode node = new C10_ListNode(digit);
+            C11_ListNode node = new C11_ListNode(digit);
             ansTail.next = node;
             ansTail = node;
             l2 = l2.next;
@@ -75,7 +75,7 @@ public class C10_AddTwoNumbersGivenListUnreversed {
 
         if (carry !=0){
             int digit = carry % 10;
-            C10_ListNode node = new C10_ListNode(digit);
+            C11_ListNode node = new C11_ListNode(digit);
             ansTail.next = node;
             ansTail = node;
         }
@@ -85,11 +85,11 @@ public class C10_AddTwoNumbersGivenListUnreversed {
         return ansHead;
     }
 
-    public static C10_ListNode reverseList(C10_ListNode head) {
+    public static C11_ListNode reverseList(C11_ListNode head) {
 
-        C10_ListNode prev = null;
-        C10_ListNode curr = head;
-        C10_ListNode forward;
+        C11_ListNode prev = null;
+        C11_ListNode curr = head;
+        C11_ListNode forward;
 
         while (curr != null) {
             forward = curr.next;
@@ -101,8 +101,8 @@ public class C10_AddTwoNumbersGivenListUnreversed {
         return prev;
     }
 
-    public static void printList(C10_ListNode head) {
-        C10_ListNode curr = head;
+    public static void printList(C11_ListNode head) {
+        C11_ListNode curr = head;
         while (curr != null) {
             System.out.print(curr.val + " ");
             curr = curr.next;
@@ -112,14 +112,14 @@ public class C10_AddTwoNumbersGivenListUnreversed {
 
 }
 
-class C10_ListNode{
+class C11_ListNode {
     int val;
-    C10_ListNode next;
-    C10_ListNode(){}
-    C10_ListNode(int x){
+    C11_ListNode next;
+    C11_ListNode(){}
+    C11_ListNode(int x){
         val = x;
     }
-    C10_ListNode(int x,C10_ListNode next){
+    C11_ListNode(int x, C11_ListNode next){
         val = x;
         this.next = next;
     }

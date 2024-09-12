@@ -1,15 +1,15 @@
 package com.CodeHelp.C8_LinkedList;
 
-public class C7_LinkedListPalindrome {
+public class C8_PalindromeLinkedList_LEETCODE {
 
     public static void main(String[] args) {
 
-        C7_ListNode head = new C7_ListNode(1);
-        C7_ListNode node2 = new C7_ListNode(2);
-        C7_ListNode node3 = new C7_ListNode(3);
-        C7_ListNode node4 = new C7_ListNode(3);
-        C7_ListNode node5 = new C7_ListNode(2);
-        C7_ListNode node6 = new C7_ListNode(1);
+        C8_ListNode head = new C8_ListNode(1);
+        C8_ListNode node2 = new C8_ListNode(2);
+        C8_ListNode node3 = new C8_ListNode(3);
+        C8_ListNode node4 = new C8_ListNode(3);
+        C8_ListNode node5 = new C8_ListNode(2);
+        C8_ListNode node6 = new C8_ListNode(1);
 
         head.next = node2;
         node2.next = node3;
@@ -21,15 +21,15 @@ public class C7_LinkedListPalindrome {
 
     }
 
-    public  static boolean isPalindrome(C7_ListNode head) {
+    public  static boolean isPalindrome(C8_ListNode head) {
 
         if (head == null || head.next == null) {
             return true;
         }
 
-        C7_ListNode mid  = findMiddle(head);
+        C8_ListNode mid  = findMiddle(head);
 
-        C7_ListNode reversedHead = reverseList(mid);
+        C8_ListNode reversedHead = reverseList(mid);
 
         while (reversedHead != null) {
             if (head.val != reversedHead.val) {return false;}
@@ -41,10 +41,10 @@ public class C7_LinkedListPalindrome {
         return true;
     }
 
-    public static  C7_ListNode findMiddle(C7_ListNode head) {
+    public static C8_ListNode findMiddle(C8_ListNode head) {
 
-        C7_ListNode slow = head;
-        C7_ListNode fast = head;
+        C8_ListNode slow = head;
+        C8_ListNode fast = head;
 
         while (fast != null){
             fast = fast.next;
@@ -56,13 +56,13 @@ public class C7_LinkedListPalindrome {
         return slow;
     }
 
-    public static C7_ListNode reverseList(C7_ListNode head) {
+    public static C8_ListNode reverseList(C8_ListNode head) {
 
         if (head.next==null)return head;
 
-        C7_ListNode prev = null;
-        C7_ListNode curr = head;
-        C7_ListNode forward;
+        C8_ListNode prev = null;
+        C8_ListNode curr = head;
+        C8_ListNode forward;
 
         while (curr != null) {
             forward = curr.next;
@@ -74,10 +74,10 @@ public class C7_LinkedListPalindrome {
     }
 }
 
-class C7_ListNode {
+class C8_ListNode {
     int val;
-    C7_ListNode next;
-    C7_ListNode() {}
-    C7_ListNode(int val) { this.val = val; }
-    C7_ListNode(int val, C7_ListNode next) { this.val = val; this.next = next; }
+    C8_ListNode next;
+    C8_ListNode() {}
+    C8_ListNode(int val) { this.val = val; }
+    C8_ListNode(int val, C8_ListNode next) { this.val = val; this.next = next; }
 }

@@ -1,16 +1,16 @@
 package com.CodeHelp.C8_LinkedList;
 
-public class C9_Sort012 {
+public class C10_Sort012 {
 
     public static void main(String[] args) {
 
-        C9_ListNode head = new C9_ListNode(1);
-        C9_ListNode second = new C9_ListNode(2);
-        C9_ListNode third = new C9_ListNode(0);
-        C9_ListNode fourth = new C9_ListNode(2);
-        C9_ListNode fifth = new C9_ListNode(0);
-        C9_ListNode sixth = new C9_ListNode(2);
-        C9_ListNode seventh = new C9_ListNode(1);
+        C10_ListNode head = new C10_ListNode(1);
+        C10_ListNode second = new C10_ListNode(2);
+        C10_ListNode third = new C10_ListNode(0);
+        C10_ListNode fourth = new C10_ListNode(2);
+        C10_ListNode fifth = new C10_ListNode(0);
+        C10_ListNode sixth = new C10_ListNode(2);
+        C10_ListNode seventh = new C10_ListNode(1);
 
         head.next = second;
         second.next = third;
@@ -28,13 +28,13 @@ public class C9_Sort012 {
 
     }
 
-    public static void sortUsingCount(C9_ListNode head) {
+    public static void sortUsingCount(C10_ListNode head) {
 
         int zero =0;
         int one = 0;
         int two = 0;
 
-        C9_ListNode temp = head;
+        C10_ListNode temp = head;
 
         while (temp != null) {
             if (temp.val == 0) {
@@ -66,21 +66,21 @@ public class C9_Sort012 {
 
     }
 
-    public static C9_ListNode withoutChangingData(C9_ListNode head) {
+    public static C10_ListNode withoutChangingData(C10_ListNode head) {
 
         if (head == null || head.next == null) {
             return head;
         }
-        C9_ListNode zeroHead = new C9_ListNode(-1);
-        C9_ListNode zeroTail = zeroHead;
-        C9_ListNode oneHead = new C9_ListNode(-1);
-        C9_ListNode oneTail = oneHead;
-        C9_ListNode twoHead = new C9_ListNode(-1);
-        C9_ListNode twoTail = twoHead;
+        C10_ListNode zeroHead = new C10_ListNode(-1);
+        C10_ListNode zeroTail = zeroHead;
+        C10_ListNode oneHead = new C10_ListNode(-1);
+        C10_ListNode oneTail = oneHead;
+        C10_ListNode twoHead = new C10_ListNode(-1);
+        C10_ListNode twoTail = twoHead;
 
 
-        C9_ListNode temp = head;
-        C9_ListNode forward;
+        C10_ListNode temp = head;
+        C10_ListNode forward;
 
         while (temp != null) {
 
@@ -123,12 +123,12 @@ public class C9_Sort012 {
 
     }
 
-    public static void printList(C9_ListNode head) {
+    public static void printList(C10_ListNode head) {
         if (head==null){
             System.out.println("List is empty");
             return;
         }
-        C9_ListNode curr = head;
+        C10_ListNode curr = head;
         while (curr != null) {
             System.out.print(curr.val + " ");
             curr = curr.next;
@@ -137,14 +137,14 @@ public class C9_Sort012 {
     }
 }
 
-class C9_ListNode{
+class C10_ListNode {
     int val;
-    C9_ListNode next;
-    C9_ListNode(){}
-    C9_ListNode(int x){
+    C10_ListNode next;
+    C10_ListNode(){}
+    C10_ListNode(int x){
         val = x;
     }
-    C9_ListNode(int x,C9_ListNode next){
+    C10_ListNode(int x, C10_ListNode next){
         val = x;
         this.next = next;
     }
