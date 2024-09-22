@@ -28,8 +28,33 @@ public class C6_DiameterOfBinaryTree_LEETCODE {
         third2.left = fourth1;
         third2.right = fourth2;
 
-        int ans = diameterOfBinaryTree(root);
+        int ans = diameterFasterWay(root);
         System.out.println(ans);
+    }
+
+    public static int diameterFasterWay(C6_TreeNode root) {
+
+        int[] ans = new int[1];
+
+        helperFaster(root,ans);
+
+        return ans[0];
+
+    }
+
+    public static int helperFaster(C6_TreeNode root, int[] ans) {
+
+        if (root == null) {
+            return 0;
+        }
+
+        int left = helperFaster(root.left, ans);
+        int right = helperFaster(root.right, ans);
+
+        ans[0] = Math.max(ans[0], left + right);
+
+        return Math.max(left, right)+1;
+
     }
 
     public static int diameterOfBinaryTree(C6_TreeNode root) {
