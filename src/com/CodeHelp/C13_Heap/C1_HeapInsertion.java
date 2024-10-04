@@ -47,10 +47,10 @@ class C1_Heap{
                 list.set(index, list.get(parentIndex));
                 list.set(parentIndex, temp);
 
+                index = parentIndex;
             }else{
                 break;
             }
-
         }
     }
 
