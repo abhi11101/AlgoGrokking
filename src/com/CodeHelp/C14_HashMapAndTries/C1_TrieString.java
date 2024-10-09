@@ -13,6 +13,9 @@ public class C1_TrieString {
 
         insertWord(root,"LEETCODE",0);
         System.out.println(searchWord(root,"LEETCODE",0));
+
+        System.out.println(deleteWord(root,"LEETCODE",0));
+        System.out.println(searchWord(root,"LEETCODE",0));
     }
 
     public static void insertWord(C1_Trie root, String word, int i) {
@@ -54,6 +57,33 @@ public class C1_TrieString {
         }
 
         return searchWord(child,word,index+1);
+    }
+
+    public static boolean deleteWord(C1_Trie root, String word, int index) {
+
+        if (index==word.length()){
+
+            if (root.isTerminal){
+
+                root.isTerminal=false;
+                return true;
+
+            }else return false;
+        }
+
+        char ch = word.charAt(index);
+        int charIndex = ch - 'A';
+        C1_Trie child;
+
+        if (root.children[charIndex]!=null){
+
+            child = root.children[charIndex];
+
+        }else{
+            return false;
+        }
+
+        return deleteWord(child,word,index+1);
     }
 }
 
