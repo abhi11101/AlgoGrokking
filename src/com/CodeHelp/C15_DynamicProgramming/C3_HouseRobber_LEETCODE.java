@@ -97,12 +97,7 @@ public class C3_HouseRobber_LEETCODE {
 
         for (int i = 1; i < nums.length; i++) {
 
-            int temp = 0;
-            if (i-2>=0){
-                temp = prev2;
-            }
-
-            int include = temp + nums[i];
+            int include = prev2 + nums[i];
             int exclude = prev1;
 
             curr = Math.max(include,exclude);
